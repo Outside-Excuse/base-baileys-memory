@@ -1,0 +1,119 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217771818488@s.whatsapp.net',
+    fromMe: false,
+    id: '42EBE8F5134D35D6808DFD2F780EAA76',
+    participant: undefined
+  },
+  messageTimestamp: 1678402781,
+  pushName: 'Pam✨',
+  message: Message {
+    conversation: 'Por el sol',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Por el sol',
+  from: '5217771818488'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217771818488@s.whatsapp.net',
+    fromMe: false,
+    id: 'FB6CA92D5C8ECA200955B565BC2E94AC',
+    participant: undefined
+  },
+  messageTimestamp: 1678402791,
+  pushName: 'Pam✨',
+  message: Message {
+    stickerMessage: StickerMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.15575-24/20113774_5723048074490524_3666129243813398671_n.enc?ccb=11-4&oh=01_AdSmpNfhJiQgCscHQ_HvOdfRJfJMvVex12Zw25v0BRj3cw&oe=6431BC79&mms3=true',
+      fileSha256: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      mediaKey: [Uint8Array],
+      mimetype: 'image/webp',
+      directPath: '/v/t62.15575-24/20113774_5723048074490524_3666129243813398671_n.enc?ccb=11-4&oh=01_AdSmpNfhJiQgCscHQ_HvOdfRJfJMvVex12Zw25v0BRj3cw&oe=6431BC79',
+      fileLength: [Long],
+      mediaKeyTimestamp: [Long],
+      firstFrameLength: 3772,
+      firstFrameSidecar: [Uint8Array],
+      isAnimated: true
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '',
+  from: '5217771818488'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217771818488@s.whatsapp.net',
+    fromMe: false,
+    id: 'BD6B0E8F0AF2EAB53471CF42D4EA727F',
+    participant: undefined
+  },
+  messageTimestamp: 1678402792,
+  pushName: 'Pam✨',
+  message: Message {
+    stickerMessage: StickerMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.15575-24/19148509_1254452365492696_2713153246417734216_n.enc?ccb=11-4&oh=01_AdT0GTkj_6mtDel4JR_LSlE0TxctTIwXJTvKgVjYHkPHcw&oe=6431F07D&mms3=true',
+      fileSha256: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      mediaKey: [Uint8Array],
+      mimetype: 'image/webp',
+      height: 64,
+      width: 64,
+      directPath: '/v/t62.15575-24/19148509_1254452365492696_2713153246417734216_n.enc?ccb=11-4&oh=01_AdT0GTkj_6mtDel4JR_LSlE0TxctTIwXJTvKgVjYHkPHcw&oe=6431F07D',
+      fileLength: [Long],
+      mediaKeyTimestamp: [Long],
+      isAnimated: false
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '',
+  from: '5217771818488'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217771818488@s.whatsapp.net',
+    fromMe: false,
+    id: 'B2200420A081DAF4F270E73D8E4DF92D',
+    participant: undefined
+  },
+  messageTimestamp: 1678402797,
+  pushName: 'Pam✨',
+  message: Message {
+    conversation: 'Vine al maker',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Vine al maker',
+  from: '5217771818488'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217771818488@s.whatsapp.net',
+    fromMe: false,
+    id: '3B73F801E4CB58F00CBF87C93486B693',
+    participant: undefined
+  },
+  messageTimestamp: 1678402809,
+  pushName: 'Pam✨',
+  message: Message {
+    conversation: 'A tomarle fotos al prototipo',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'A tomarle fotos al prototipo',
+  from: '5217771818488'
+}
