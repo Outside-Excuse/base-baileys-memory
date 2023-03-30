@@ -1,65 +1,64 @@
 const { createBot, createProvider, createFlow, addKeyword } = require('@bot-whatsapp/bot')
 
+
+//const API_URL = https://university6y.kanbanize.com/api/v2 ;
 const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
 
 const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí tenemos el flujo secundario'])
 
-const flowDocs = addKeyword(['doc', 'documentacion', 'documentación']).addAnswer(
+const flowAyuda = addKeyword(['Ayuda', 'ayuda']).addAnswer(
     [
-        '📄 Aquí encontras las documentación recuerda que puedes mejorarla',
-        'https://bot-whatsapp.netlify.app/',
-        '\n*2* Para siguiente paso.',
+        '📄 En el siguiente link encontraras soporte de Kanbanize',
+        'https://kanbanize.com/es/atencion-cliente',
+        '\n*Ok* para regresar.',
     ],
     null,
     null,
     [flowSecundario]
 )
 
-const flowTuto = addKeyword(['tutorial', 'tuto']).addAnswer(
+const flowConsultarTablero = addKeyword(['Consultar', 'consultar']).addAnswer(
     [
-        '🙌 Aquí encontras un ejemplo rapido',
-        'https://bot-whatsapp.netlify.app/docs/example/',
-        '\n*2* Para siguiente paso.',
+        '🚀  Flujo para *Consultar tablero*, se pedirán los datos necesarios al usuario.',
+        
+        '\n*Ok* Para regresar.',
     ],
     null,
     null,
     [flowSecundario]
 )
 
-const flowGracias = addKeyword(['gracias', 'grac']).addAnswer(
+const flowMoverTarjeta = addKeyword(['Mover', 'mover']).addAnswer(  //flow MOVER TARJETA
     [
-        '🚀 Puedes aportar tu granito de arena a este proyecto',
-        '[*opencollective*] https://opencollective.com/bot-whatsapp',
-        '[*buymeacoffee*] https://www.buymeacoffee.com/leifermendez',
-        '[*patreon*] https://www.patreon.com/leifermendez',
-        '\n*2* Para siguiente paso.',
+        '🚀 Flujo para *mover tarjeta*, se pedirán los datos necesarios al usuario.',
+        '\n*Ok* Para regresar.',
     ],
     null,
     null,
     [flowSecundario]
 )
 
-const flowDiscord = addKeyword(['discord']).addAnswer(
-    ['🤪 Únete al discord', 'https://link.codigoencasa.com/DISCORD', '\n*2* Para siguiente paso.'],
+const flowCrearTarjeta = addKeyword(['Agregar','agregar']).addAnswer(        //flow CREAR TARJETA
+    ['🚀 Flujo para *Crear tarjeta*, se pedirán los datos necesarios al usuario.', '\n*2* Para siguiente paso.'],
     null,
     null,
     [flowSecundario]
 )
 
-const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
-    .addAnswer('🙌 Hola bienvenido a este *Chatbot*')
+const flowPrincipal = addKeyword(['hola', 'ole', 'alo','Hola','OK','ok','Ok'])
+    .addAnswer('¡Hola! Soy *KanBot*')
     .addAnswer(
         [
-            'te comparto los siguientes links de interes sobre el proyecto',
-            '👉 *doc* para ver la documentación',
-            '👉 *gracias*  para ver la lista de videos',
-            '👉 *discord* unirte al discord',
+            'Te comparto las siguientes acciones que puedes realizar. ',
+            '👉 *Consultar* para Consultar tablero',
+            '👉 *Mover*  para mover una tarjeta',
+            '👉 *Agregar*  para crear tarjeta',
         ],
         null,
         null,
-        [flowDocs, flowGracias, flowTuto, flowDiscord]
+        [flowAyuda, flowMoverTarjeta, flowConsultarTablero, flowCrearTarjeta ]
     )
 
 const main = async () => {
